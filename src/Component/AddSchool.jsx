@@ -36,7 +36,7 @@ const AddSchool = () => {
     formDataWithImage.append('image', image);
 
     try {
-      const response = await axios.post('http://localhost:8081/school/formSubmit', formDataWithImage, {
+      const response = await axios.post('https://findschool.onrender.com/school/formSubmit', formDataWithImage, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
