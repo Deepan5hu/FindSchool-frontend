@@ -10,7 +10,7 @@ function App() {
   const [data,setData] = useState();
   useEffect(() => {
     const fetchSchool = async () => {
-      const response = await axios.get('http://localhost:8081/school/getSchools');
+      const response = await axios.get('https://findschool.onrender.com/school/getSchools');
       setData(response.data)
 
     };
